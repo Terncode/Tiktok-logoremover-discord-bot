@@ -56,5 +56,5 @@ for imagePath in glob.glob(trainingPath + "/*.*"):
 print("Learning")
 model = KNeighborsClassifier(n_neighbors=1)
 model.fit(hists, labels)
-joblib.dump(model, 'tiktok.pkl')
+joblib.dump(model, 'model.pkl')
 
